@@ -1,0 +1,16 @@
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/404.scss" "dest" 
+"css/404.css") }}
+{{ end }}
+
+{{ define "main" }}
+<article>
+  <h1>
+    A wild Page appeared!
+  </h1>
+  <p>
+    It was not the page you were looking for though...<br />
+    Go <a href="/">home</a>?
+  </p>
+</article>
+{{ end }}
